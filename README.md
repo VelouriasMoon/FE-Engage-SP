@@ -1,10 +1,19 @@
 # FE-Engage-SP
 Substance Painter shader and more for Fire Emblem Engage
+![image](https://github.com/user-attachments/assets/7be87b00-7872-49e1-bc19-1b2da569ec25)
+
 
 ## Navigation
+- [Version 2.0](#new-in-version-20)
 - [Setup](#setup)
 - [Usage](#usage)
 - [Export](#export)
+
+## New in Version 2.0
+Version 2.0 now includes Hair and Eye Shaders for a more complete preview.  
+Eye shaders are pretty much exclusively controlled in the shader settings tab for now and more mostly there for now.   
+For working with the Hair shader I reccomend changing the UV Padding in the "Texture Set Settings" tab for your hair mat from "3D Space" to "UV Space.  
+![image](https://github.com/user-attachments/assets/bfa64107-d542-4b90-ac8b-f4d52b52a0a7)
 
 ## Setup
 1. Download or Clone the repo
@@ -14,7 +23,7 @@ Substance Painter shader and more for Fire Emblem Engage
 ![image](https://github.com/user-attachments/assets/7945a84e-aa7b-429d-8808-cec15d123677)
 
 ## Usage
-Start by making a new project under File > New, then pick the "FE-Engage" Template and setting the normal map format to OpenGL  
+Start by making a new project under File > New, then pick the "FE-Engage" or "FE-Engage-V2" Template and setting the normal map format to OpenGL  
 ![image](https://github.com/user-attachments/assets/2403e4f7-6dbf-4ee5-a5ec-ac959dbe002c)  
 
 Import textures(if needed) by dragging the images into the Shelf/Asset tab. Making sure that the normal map is properly formated, aka blue not red, and the multi map is split into it's sub components.  
@@ -37,5 +46,5 @@ Once your textures are done it's time to export. Luckily Substance Painter makes
 it to Engage to make sure it's using the latest version of the export template. Enable/Disable all the texture setup you do or don't want exported. Then you are ready to hit the Export button, SP will export all your textures 
 game ready for import into unity. Once it's done exporting the textures click the "Open Output Folder" at the top of the export window in the List of Exports tab to get the images you need to import into unity.
 
-one limit of this is that texture sets will all have their own export, so if you want to have both the Dress and Skin textures in the same image like how engage does your'll have to do some post image editing to splice the 2 together.
+one limit of this is that texture sets will all have their own export, so if you want to have both the Dress and Skin textures in the same image like how engage does you'll have to do some post image editing to splice the 2 together.
 Or just leave them as is and use them as sperate textures in unity.
