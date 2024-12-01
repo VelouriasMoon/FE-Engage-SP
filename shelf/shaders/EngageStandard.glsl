@@ -5,7 +5,7 @@ import lib-emissive.glsl
 import lib-vectors.glsl
 import lib-utils.glsl
 
-//: state cull_face off
+//: state cull_face on
 //: state blend over
 
 //: param auto main_light
@@ -40,6 +40,9 @@ uniform vec3 _RimLightColorShadow;
 uniform vec3 _RimLightColorLight;
 //: param custom { "default": 1, "label": "Color RGB", "widget": "color", "label": "Main Light Color"  }
 uniform vec3 mainLightColor;
+
+//: param custom { "default": 0, "label": "Time", "min": 0.0, "max":100, "visible" : true }
+uniform float Time;
 
 void shade(V2F inputs)
 {
